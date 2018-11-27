@@ -1,0 +1,2 @@
+<xsearch status="hideInput"></xsearch>
+<xpannel songlist="{{song_list}}"></xpannel>

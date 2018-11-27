@@ -1,0 +1,17 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<progress percent="{{percent}}" show-info />
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+<button bindtap="setPlain">点击设置以上按钮plain属性</button>
+<navigator url="/pages/logs/logs" hover-class="navigator-hover">跳转到logs页面</navigator>
+<image style="width: 200px; height: 200px; background-color: #eeeeee;" src="{{src}}"></image>
